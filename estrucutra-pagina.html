@@ -21,17 +21,19 @@
             min-height: 10vh;
         }
 
+        .content {
+            display: flex;    
+        }
+
         main {
             background-color: rebeccapurple;
             min-height: 70vh;
-            width: 70%;
             float: left;
         }
 
         aside {
             min-height: 70vh;
             width: 30%;
-            float: left;
             background-color: rgba(49, 155, 105, 0.705);
             /* color hexadecimal, usar inspector de codigo de Chrome #319b69b4 */
         }
@@ -76,13 +78,15 @@
         BARRA DE NAVEGACION
     </nav>
 
-    <main>
-        CONTENIDO PRINCIPAL
-    </main>
+    <div class="content">
+        <main>
+            CONTENIDO PRINCIPAL
+        </main>
 
-    <aside>
-        SIDEBAR
-    </aside>
+        <aside>
+            SIDEBAR
+        </aside>
+    </div>    
 
     <footer>
         PIEDE DE PAGINA
